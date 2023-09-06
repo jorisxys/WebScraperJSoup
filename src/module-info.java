@@ -6,4 +6,5 @@
  *
  */
 module WebScraperJSoup {
+	requires org.jsoup;
 }
