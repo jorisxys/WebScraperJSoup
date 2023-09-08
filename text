@@ -1,1 +1,11 @@
+Structure & separation of packages should be secure and safe:
+	cui: interface on which to interact/optional javafx interface later
+	domain classes: cui interacts with the domaincontroller and in turn the different classes
+	startup: startup class new WebScraperApplicatie(new DomeinController()).start in main method
+	persistence: 
+	dto's 
 
+
+webscraper that can pull stock data 
+webscraper that can pull wuxiaworld pages and save them into a specified directory of my choice
+	(options to bundle them, range, amount)

@@ -1,10 +1,16 @@
 package cui;
 
+
+/*
+ * class that uses jsoup to webscrape the latest finviz stock data: Ticker and lastPrice
+ * later upgrade this into an abstract super class and let WuxiaWorldWebScraper, StockDataWebScraper inherit from this.
+ */
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 
-public class WebScrape {
+public class WebScraper {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
