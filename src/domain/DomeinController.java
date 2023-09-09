@@ -13,7 +13,7 @@ public class DomeinController {
 	}
 
 	public String downloadChapter(String url) {
-		return url;
+		return bws.getData();
 	}
 	
 }

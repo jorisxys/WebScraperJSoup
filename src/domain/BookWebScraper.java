@@ -11,7 +11,7 @@ public class BookWebScraper {
 		
 	}
 	
-	public void getData() {
+	public String getData() {
 		
 		
 		/*
@@ -26,16 +26,20 @@ public class BookWebScraper {
 		 */
 		
 		final String url = "https://novelfull.com/a-will-eternal/chapter-1-im-bai-xiaochun.html";
+		String chapter ="";
 
 		try {
 			final Document document = Jsoup.connect(url).get();
 			
 			Element text = document.select("div.chapter-c").first();
-			System.out.println(text.text());
+			chapter = text.text();
 		}
 		catch (Exception ex) {
 			ex.printStackTrace();
 		}
+		return chapter;
+		
+		
 	}
 	
 }
