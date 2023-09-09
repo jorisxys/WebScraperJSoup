@@ -1,4 +1,4 @@
-package cui;
+package domain;
 
 
 /*
@@ -10,12 +10,14 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 
-public class WebScraper {
+public class StockWebScraper {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		new StockWebScraper().getData();
 		
-		
+	}
+	
+	public void getData() {
 		final String url = "https://finviz.com";
 
 		try {
@@ -37,8 +39,6 @@ public class WebScraper {
 		catch (Exception ex) {
 			ex.printStackTrace();
 		}
-		
-		
 	}
 
 }
